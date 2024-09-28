@@ -1,0 +1,27 @@
+POST http://localhost:8000/login/
+Content-Type: application/json
+
+{
+    "username": "LokiTheGod1",
+    "password": "Pass1234!"
+}
+###
+
+POST http://localhost:8000/signup/
+Content-Type: application/json
+
+{
+    "username": "LokiTheGod1",
+    "password": "Pass1234!",
+    "email": "loki1@thegod.com"
+}
+###
+
+GET  http://localhost:8000/test-token/
+Content-Type: application/json
+Authorization: Token 47b3bc204d1c0765d90a3ba1ed9f090569b9138d
+
+# {
+#     "token": "47b3bc204d1c0765d90a3ba1ed9f090569b9138d.eyJ1c2VybmFtZSI6IkxvazkiLCJleHAiOjE3MTYyMjYyMjIsImlhdCI6MTcyMjIyNjIyMn0.5555555555555555555555555555555555555555555555555555555555555555"
+# }
+
